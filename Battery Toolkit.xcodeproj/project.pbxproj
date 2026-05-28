@@ -27,7 +27,7 @@
 		CE39746E285A229F002D0EC9 /* BTActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39746D285A229F002D0EC9 /* BTActions.swift */; };
 		CE397472285A2396002D0EC9 /* BTDaemonXPCServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE397471285A2396002D0EC9 /* BTDaemonXPCServer.swift */; };
 		CE397478285A25A1002D0EC9 /* BTDaemonXPCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE397477285A25A1002D0EC9 /* BTDaemonXPCClient.swift */; };
-		CE3C1D8528C7FB15008A0F7D /* me.mhaeuser.batterytoolkitd.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE675D9528C7E81600F05929 /* me.mhaeuser.batterytoolkitd.plist */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CE3C1D8528C7FB15008A0F7D /* an.anuser.batterytoolkitd.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE675D9528C7E81600F05929 /* an.anuser.batterytoolkitd.plist */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CE3C1DA128C92A42008A0F7D /* me.mhaeuser.batterytoolkitd in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE39744B2859E6D3002D0EC9 /* me.mhaeuser.batterytoolkitd */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CE3C1DA328C9329F008A0F7D /* BTDaemonManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3C1DA228C9329F008A0F7D /* BTDaemonManagement.swift */; };
 		CE3C1DA728CA33FD008A0F7D /* BTLegacyHelperInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3C1DA628CA33FD008A0F7D /* BTLegacyHelperInfo.swift */; };
@@ -124,7 +124,7 @@
 			dstPath = Contents/Library/LaunchDaemons;
 			dstSubfolderSpec = 1;
 			files = (
-				CE3C1D8528C7FB15008A0F7D /* me.mhaeuser.batterytoolkitd.plist in CopyFiles */,
+				CE3C1D8528C7FB15008A0F7D /* an.anuser.batterytoolkitd.plist in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +204,7 @@
 		CE5E5AE728DE31EB00AF1D07 /* BTSettingsMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTSettingsMenuItem.swift; sourceTree = "<group>"; };
 		CE5E5AF228DF183E00AF1D07 /* BTAuthorizationRights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTAuthorizationRights.swift; sourceTree = "<group>"; };
 		CE5E5AF728DF1CB100AF1D07 /* BTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTError.swift; sourceTree = "<group>"; };
-		CE675D9528C7E81600F05929 /* me.mhaeuser.batterytoolkitd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = me.mhaeuser.batterytoolkitd.plist; sourceTree = "<group>"; };
+		CE675D9528C7E81600F05929 /* an.anuser.batterytoolkitd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = an.anuser.batterytoolkitd.plist; sourceTree = "<group>"; };
 		CE675D9628C7E82E00F05929 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE6B75FF28BC1995008DF170 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		CE6B760328BC19C7008DF170 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -300,7 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				CE675D9628C7E82E00F05929 /* Info.plist */,
-				CE675D9528C7E81600F05929 /* me.mhaeuser.batterytoolkitd.plist */,
+				CE675D9528C7E81600F05929 /* an.anuser.batterytoolkitd.plist */,
 				CE3C1D8028C7F622008A0F7D /* launchd.plist */,
 				CEA80FD7285A56B50064ADEA /* BTDaemon.swift */,
 				CEA80FD5285A565C0064ADEA /* BTDaemonComm.swift */,
@@ -490,14 +490,14 @@
 				CE8A1EC92C1C9AEE004FB549 /* MachTaskSelf */,
 				CE6C06B828A84C2400D76CC8 /* BTPreprocessor */,
 				CE6C06A328A84A9200D76CC8 /* IOPMPrivate */,
-				CED8DD3628C364D60082C02A /* NSXPCConnection+AuditToken */,
+				CED8DD3628C364D60082C02A /* NSXPCConnectionAuditToken */,
 				CEF3496D28DCD34900A1CECD /* SecCodeEx */,
 				CEB4671C2843C80D00D7CB01 /* SMCParamStruct */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		CED8DD3628C364D60082C02A /* NSXPCConnection+AuditToken */ = {
+		CED8DD3628C364D60082C02A /* NSXPCConnectionAuditToken */ = {
 			isa = PBXGroup;
 			children = (
 				CED8DD3728C364FA0082C02A /* module.modulemap */,
@@ -847,7 +847,7 @@
 					__launchd_plist,
 					"$(SRCROOT)/$(PRODUCT_NAME)/launchd.plist",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.mhaeuser.batterytoolkitd;
+				PRODUCT_BUNDLE_IDENTIFIER = an.anuser.batterytoolkitd;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -866,7 +866,7 @@
 					__launchd_plist,
 					"$(SRCROOT)/$(PRODUCT_NAME)/launchd.plist",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.mhaeuser.batterytoolkitd;
+				PRODUCT_BUNDLE_IDENTIFIER = an.anuser.batterytoolkitd;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -876,12 +876,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BT_APP_ID = me.mhaeuser.BatteryToolkit;
+				BT_APP_ID = an.anuser.BatteryToolkit;
 				BT_AUTOSTART_ID = me.mhaeuser.BatteryToolkitAutostart;
-				BT_CODESIGN_CN = "Apple Development: Marvin Häuser (87DYA6FH9K)";
-				BT_DAEMON_CONN = EMH49F8A2Y.me.mhaeuser.batterytoolkitd;
-				BT_DAEMON_ID = me.mhaeuser.batterytoolkitd;
-				BT_SERVICE_ID = me.mhaeuser.BatteryToolkitService;
+				BT_CODESIGN_CN = "Apple Development: armaan.nakhuda@icloud.com (2N282MX55A)";
+				BT_DAEMON_CONN = 2N282MX55A.an.anuser.batterytoolkitd;
+				BT_DAEMON_ID = an.anuser.batterytoolkitd;
+				BT_SERVICE_ID = an.anuser.BatteryToolkitService;
 				CLANG_ANALYZER_GCD_PERFORMANCE = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -942,7 +942,7 @@
 				CURRENT_PROJECT_VERSION = 1.9;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = EMH49F8A2Y;
+				DEVELOPMENT_TEAM = 2N282MX55A;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1013,12 +1013,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BT_APP_ID = me.mhaeuser.BatteryToolkit;
+				BT_APP_ID = an.anuser.BatteryToolkit;
 				BT_AUTOSTART_ID = me.mhaeuser.BatteryToolkitAutostart;
-				BT_CODESIGN_CN = "Apple Development: Marvin Häuser (87DYA6FH9K)";
-				BT_DAEMON_CONN = EMH49F8A2Y.me.mhaeuser.batterytoolkitd;
-				BT_DAEMON_ID = me.mhaeuser.batterytoolkitd;
-				BT_SERVICE_ID = me.mhaeuser.BatteryToolkitService;
+				BT_CODESIGN_CN = "Apple Development: armaan.nakhuda@icloud.com (2N282MX55A)";
+				BT_DAEMON_CONN = 2N282MX55A.an.anuser.batterytoolkitd;
+				BT_DAEMON_ID = an.anuser.batterytoolkitd;
+				BT_SERVICE_ID = an.anuser.BatteryToolkitService;
 				CLANG_ANALYZER_GCD_PERFORMANCE = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -1079,7 +1079,7 @@
 				CURRENT_PROJECT_VERSION = 1.9;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = EMH49F8A2Y;
+				DEVELOPMENT_TEAM = 2N282MX55A;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1151,10 +1151,12 @@
 				DEVELOPMENT_TEAM = 52NZZ8ATCL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/BatteryToolkit/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Battery Toolkit";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 Marvin Häuser. All rights reserved.";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				PRODUCT_BUNDLE_IDENTIFIER = me.mhaeuser.BatteryToolkit;
+				PRODUCT_BUNDLE_IDENTIFIER = an.anuser.BatteryToolkit;
 			};
 			name = Debug;
 		};
@@ -1167,10 +1169,12 @@
 				DEVELOPMENT_TEAM = 52NZZ8ATCL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/BatteryToolkit/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Battery Toolkit";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 Marvin Häuser. All rights reserved.";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				PRODUCT_BUNDLE_IDENTIFIER = me.mhaeuser.BatteryToolkit;
+				PRODUCT_BUNDLE_IDENTIFIER = an.anuser.BatteryToolkit;
 			};
 			name = Release;
 		};
@@ -1228,8 +1232,9 @@
 				DEVELOPMENT_TEAM = 52NZZ8ATCL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BatteryToolkitService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Battery Toolkit Service";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				PRODUCT_BUNDLE_IDENTIFIER = me.mhaeuser.BatteryToolkitService;
+				PRODUCT_BUNDLE_IDENTIFIER = an.anuser.BatteryToolkitService;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1240,8 +1245,9 @@
 				DEVELOPMENT_TEAM = 52NZZ8ATCL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BatteryToolkitService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Battery Toolkit Service";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				PRODUCT_BUNDLE_IDENTIFIER = me.mhaeuser.BatteryToolkitService;
+				PRODUCT_BUNDLE_IDENTIFIER = an.anuser.BatteryToolkitService;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
