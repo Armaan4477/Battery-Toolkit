@@ -92,12 +92,10 @@ internal enum BTPowerState {
         assert(BTSettings.magSafeSync)
         assert(!self.powerDisabled)
 
-        if percent == 100 {
+        if percent == 100 || self.chargingDisabled {
             _ = SMCComm.MagSafe.setGreen()
-        } else if self.chargingDisabled {
-            _ = SMCComm.MagSafe.setOrange()
         } else {
-            _ = SMCComm.MagSafe.setOrangeSlowBlink()
+            _ = SMCComm.MagSafe.setOrangeFastBlink()
         }
     }
 
